@@ -1,0 +1,12 @@
+.pure-modal .close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pure-modal .panel-heading{
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    background-color: white;
+    border-bottom: 1px solid #f0f0f0;
+}

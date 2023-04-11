@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .container{
+        @apply min-w-full max-w-full w-full flex flex-col min-h-screen pb-20 md:pb-0;
+    }
+
+    .row{
+        @apply flex flex-col lg:flex-row md:py-6 px-6 flex-wrap;
+    }
+
+    .col-5{
+        @apply w-full mb-4 lg:mb-0 lg:w-1/5 px-3;
+    }
+
+    .col-4{
+        @apply w-full mb-4 lg:mb-0 lg:w-1/4 px-3;
+    }
+
+    .col-3{
+        @apply w-full mb-4 lg:mb-0 lg:w-1/3 px-3;
+    }
+
+    .col-2{
+        @apply w-full mb-4 lg:mb-0 lg:w-1/2 px-3 max-w-[50rem];
+    }
+
+}
+
+@layer base {
+    .css-1wvake5{
+        @apply bg-transparent;
+        background-image: linear-gradient(180deg,#22c55e,#4ade80);
+    }
+    
+    form{
+        @apply w-full;
+    }
+
+    .form-group{
+        @apply w-full flex flex-col pt-2 px-6;
+
+    }
+    .form-label, .form-group label{
+        @apply text-sm mb-1 text-slate-600 font-semibold;
+    }
+    input, .form-input{
+        @apply max-h-[38px] focus:outline-offset-2 focus:outline-4 text-sm leading-5 ease-in-out block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-green-300 focus:outline-none focus:transition-shadow;
+        
+    }
+    th .form-input{
+        @apply py-0 text-sm;
+        color: black !important;
+    }
+    
+    .form-input.form-control, .react-tel-input .form-control {
+         width: 100% !important;
+    }
+    .form-input:focus{
+        box-shadow: #bbf7d0 0px 0px 0px 2px;
+    }
+    
+
+    .form-submit{
+        @apply inline-block w-full px-6 py-3 mt-6 mb-0 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer shadow-md text-xs ease-in bg-gradient-to-tl from-green-600 to-lime-400  hover:shadow-sm active:opacity-90 duration-100;
+    }
+    .form-submit:hover{
+        transform: scale(1.01);
+    }
+}
